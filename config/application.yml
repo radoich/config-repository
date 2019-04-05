@@ -1,2 +1,12 @@
-some:
-  property: Property common for all apps
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env, refresh, health, info
+
